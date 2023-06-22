@@ -55,6 +55,12 @@ build CMakeFiles/index.dir/dp/714_max_profit_with_fee/index.cpp.o: CXX_COMPILER_
   OBJECT_DIR = CMakeFiles/index.dir
   OBJECT_FILE_DIR = CMakeFiles/index.dir/dp/714_max_profit_with_fee
 
+build CMakeFiles/index.dir/dp/63.unique_paths_2/Solution.cpp.o: CXX_COMPILER__index_Debug /home/michael/Documents/Workspace/algo/dp/63.unique_paths_2/Solution.cpp || cmake_object_order_depends_target_index
+  DEP_FILE = CMakeFiles/index.dir/dp/63.unique_paths_2/Solution.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/index.dir
+  OBJECT_FILE_DIR = CMakeFiles/index.dir/dp/63.unique_paths_2
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target index
@@ -63,7 +69,7 @@ build CMakeFiles/index.dir/dp/714_max_profit_with_fee/index.cpp.o: CXX_COMPILER_
 #############################################
 # Link the executable index
 
-build index: CXX_EXECUTABLE_LINKER__index_Debug CMakeFiles/index.dir/dp/714_max_profit_with_fee/index.cpp.o
+build index: CXX_EXECUTABLE_LINKER__index_Debug CMakeFiles/index.dir/dp/714_max_profit_with_fee/index.cpp.o CMakeFiles/index.dir/dp/63.unique_paths_2/Solution.cpp.o
   FLAGS = -g
   LINK_FLAGS = -rdynamic
   OBJECT_DIR = CMakeFiles/index.dir
