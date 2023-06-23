@@ -20,21 +20,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1052fe4-6611-4eb7-ac50-f1207ace5816" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dp/123.best_time_to_buy_stock_iii/Solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp/123.best_time_to_buy_stock_iii/Solution.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp/62.unique_paths/Solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp/63.unique_paths_2/Solution.cpp" afterDir="false" />
+    <list default="true" id="f1052fe4-6611-4eb7-ac50-f1207ace5816" name="Changes" comment="dynamic-programing at 23/06/2023">
+      <change afterPath="$PROJECT_DIR$/dp/1027.longest_arithmetic_subsequence/Solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dp/1027.longest_arithmetic_subsequence/Solution.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-7d7327d67b3dcac24ff0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-06-22T11-32-27-0376.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-index-Debug-70288709371ccadd0cbd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/index" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/index" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +34,13 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -121,8 +117,17 @@
       <workItem from="1687433058299" duration="81000" />
       <workItem from="1687433172078" duration="42000" />
       <workItem from="1687433222854" duration="127000" />
-      <workItem from="1687433372345" duration="5659000" />
+      <workItem from="1687433372345" duration="6873000" />
     </task>
+    <task id="LOCAL-00001" summary="dynamic-programing at 23/06/2023">
+      <option name="closed" value="true" />
+      <created>1687453790135</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687453790135</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,5 +149,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dynamic-programing at 23/06/2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="dynamic-programing at 23/06/2023" />
   </component>
 </project>
