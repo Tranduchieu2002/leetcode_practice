@@ -20,10 +20,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1052fe4-6611-4eb7-ac50-f1207ace5816" name="Changes" comment="dynamic-programing at 23/06/2023">
-      <change afterPath="$PROJECT_DIR$/dp/1027.longest_arithmetic_subsequence/Solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp/1027.longest_arithmetic_subsequence/Solution.h" afterDir="false" />
+    <list default="true" id="f1052fe4-6611-4eb7-ac50-f1207ace5816" name="Changes" comment="dynamic-programing at 23/06/2023 - 2">
+      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/PlayFair.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/PlayFair.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/affine/affine.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/affine/affine.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/ma-dich-vong/shift_cipher.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/ma-dich-vong/shift_cipher.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/ma-thay-the/substitution_cipher.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/ma-thay-the/substitution_cipher.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +87,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.index">
+  <component name="RunManager" selected="C/C++ File.affine.cpp">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -92,16 +101,52 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlayFair.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="PlayFair.cpp" CONFIG_NAME="PlayFair.cpp">
+      <option name="sourceFile" value="an-toan-thong-tin/PlayFair.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Vacation.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$/dp" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="index.cpp" CONFIG_NAME="Vacation.cpp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="affine.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="affine.cpp" CONFIG_NAME="affine.cpp">
+      <option name="sourceFile" value="an-toan-thong-tin/affine/affine.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="shift_cipher.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="shift_cipher.cpp" CONFIG_NAME="shift_cipher.cpp">
+      <option name="sourceFile" value="an-toan-thong-tin/ma-dich-vong/shift_cipher.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="substitution_cipher.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="substitution_cipher.cpp" CONFIG_NAME="substitution_cipher.cpp">
+      <option name="sourceFile" value="an-toan-thong-tin/ma-thay-the/substitution_cipher.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="C/C++ File.Vacation.cpp" />
+      <item itemvalue="C/C++ File.PlayFair.cpp" />
+      <item itemvalue="C/C++ File.affine.cpp" />
+      <item itemvalue="C/C++ File.shift_cipher.cpp" />
+      <item itemvalue="C/C++ File.substitution_cipher.cpp" />
       <item itemvalue="CMake Application.index" />
       <item itemvalue="CMake Debug.Project" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="C/C++ File.affine.cpp" />
+        <item itemvalue="C/C++ File.substitution_cipher.cpp" />
+        <item itemvalue="C/C++ File.shift_cipher.cpp" />
+        <item itemvalue="C/C++ File.PlayFair.cpp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -117,7 +162,7 @@
       <workItem from="1687433058299" duration="81000" />
       <workItem from="1687433172078" duration="42000" />
       <workItem from="1687433222854" duration="127000" />
-      <workItem from="1687433372345" duration="6873000" />
+      <workItem from="1687433372345" duration="26107000" />
     </task>
     <task id="LOCAL-00001" summary="dynamic-programing at 23/06/2023">
       <option name="closed" value="true" />
@@ -127,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687453790135</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dynamic-programing at 23/06/2023 - 2">
+      <option name="closed" value="true" />
+      <created>1687484397507</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687484397507</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +205,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dynamic-programing at 23/06/2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="dynamic-programing at 23/06/2023" />
+    <MESSAGE value="dynamic-programing at 23/06/2023 - 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="dynamic-programing at 23/06/2023 - 2" />
   </component>
 </project>
