@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -20,19 +20,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1052fe4-6611-4eb7-ac50-f1207ace5816" name="Changes" comment="dynamic-programing at 23/06/2023 - 2">
-      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/PlayFair.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/PlayFair.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/affine/affine.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/affine/affine.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/ma-dich-vong/shift_cipher.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/ma-dich-vong/shift_cipher.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/ma-thay-the/substitution_cipher.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/an-toan-thong-tin/ma-thay-the/substitution_cipher.h" afterDir="false" />
+    <list default="true" id="f1052fe4-6611-4eb7-ac50-f1207ace5816" name="Changes" comment="an-toan-thong-tin (1)">
+      <change afterPath="$PROJECT_DIR$/dp/1575.call-all-posible-routes/solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dp/1575.call-all-posible-routes/solution.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,23 +54,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/home/michael/Documents/Workspace/algo/dp/63.unique_paths_2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "structure.view.defaults.are.configured": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/michael/Documents/Workspace/algo/dp/63.unique_paths_2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dp/63.unique_paths_2" />
@@ -88,13 +79,13 @@
     </key>
   </component>
   <component name="RunManager" selected="C/C++ File.affine.cpp">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Project" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory">
       <method v="2" />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
     </configuration>
     <configuration name="index" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="index" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="index">
       <method v="2">
@@ -162,7 +153,8 @@
       <workItem from="1687433058299" duration="81000" />
       <workItem from="1687433172078" duration="42000" />
       <workItem from="1687433222854" duration="127000" />
-      <workItem from="1687433372345" duration="26107000" />
+      <workItem from="1687433372345" duration="26890000" />
+      <workItem from="1687600048974" duration="950000" />
     </task>
     <task id="LOCAL-00001" summary="dynamic-programing at 23/06/2023">
       <option name="closed" value="true" />
@@ -180,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687484397507</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="an-toan-thong-tin (1)">
+      <option name="closed" value="true" />
+      <created>1687590198652</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687590198652</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +206,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dynamic-programing at 23/06/2023" />
     <MESSAGE value="dynamic-programing at 23/06/2023 - 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="dynamic-programing at 23/06/2023 - 2" />
+    <MESSAGE value="an-toan-thong-tin (1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="an-toan-thong-tin (1)" />
   </component>
 </project>
