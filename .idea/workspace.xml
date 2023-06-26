@@ -20,9 +20,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1052fe4-6611-4eb7-ac50-f1207ace5816" name="Changes" comment="an-toan-thong-tin (1)">
-      <change afterPath="$PROJECT_DIR$/dp/1575.call-all-posible-routes/solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp/1575.call-all-posible-routes/solution.h" afterDir="false" />
+    <list default="true" id="f1052fe4-6611-4eb7-ac50-f1207ace5816" name="Changes" comment="dynamic-programing 25-6-2023">
+      <change afterPath="$PROJECT_DIR$/dp/329.longest_increase_path_matrix/solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dp/329.longest_increase_path_matrix/solution.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/two-pointers/2462.Total_Cost_to_Hire_K_Workers/Solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/two-pointers/2462.Total_Cost_to_Hire_K_Workers/Solution.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,14 +80,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.affine.cpp">
+  <component name="RunManager" selected="C/C++ File.solution.cpp">
     <configuration name="Project" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory">
       <method v="2" />
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
     </configuration>
     <configuration name="index" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="index" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="index">
       <method v="2">
@@ -115,6 +112,12 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="solution.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="solution.cpp" CONFIG_NAME="solution.cpp">
+      <option name="sourceFile" value="dp/329.longest_increase_path_matrix/solution.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="substitution_cipher.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="substitution_cipher.cpp" CONFIG_NAME="substitution_cipher.cpp">
       <option name="sourceFile" value="an-toan-thong-tin/ma-thay-the/substitution_cipher.cpp" />
       <method v="2">
@@ -123,6 +126,7 @@
     </configuration>
     <list>
       <item itemvalue="C/C++ File.Vacation.cpp" />
+      <item itemvalue="C/C++ File.solution.cpp" />
       <item itemvalue="C/C++ File.PlayFair.cpp" />
       <item itemvalue="C/C++ File.affine.cpp" />
       <item itemvalue="C/C++ File.shift_cipher.cpp" />
@@ -132,6 +136,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.solution.cpp" />
         <item itemvalue="C/C++ File.affine.cpp" />
         <item itemvalue="C/C++ File.substitution_cipher.cpp" />
         <item itemvalue="C/C++ File.shift_cipher.cpp" />
@@ -154,7 +159,8 @@
       <workItem from="1687433172078" duration="42000" />
       <workItem from="1687433222854" duration="127000" />
       <workItem from="1687433372345" duration="26890000" />
-      <workItem from="1687600048974" duration="950000" />
+      <workItem from="1687600048974" duration="1025000" />
+      <workItem from="1687793107297" duration="1377000" />
     </task>
     <task id="LOCAL-00001" summary="dynamic-programing at 23/06/2023">
       <option name="closed" value="true" />
@@ -180,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687590198652</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dynamic-programing 25-6-2023">
+      <option name="closed" value="true" />
+      <created>1687693341743</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687693341743</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +221,7 @@
     <MESSAGE value="dynamic-programing at 23/06/2023" />
     <MESSAGE value="dynamic-programing at 23/06/2023 - 2" />
     <MESSAGE value="an-toan-thong-tin (1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="an-toan-thong-tin (1)" />
+    <MESSAGE value="dynamic-programing 25-6-2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="dynamic-programing 25-6-2023" />
   </component>
 </project>
