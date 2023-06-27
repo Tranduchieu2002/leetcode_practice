@@ -20,11 +20,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1052fe4-6611-4eb7-ac50-f1207ace5816" name="Changes" comment="dynamic-programing 25-6-2023">
-      <change afterPath="$PROJECT_DIR$/dp/329.longest_increase_path_matrix/solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp/329.longest_increase_path_matrix/solution.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/two-pointers/2462.Total_Cost_to_Hire_K_Workers/Solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/two-pointers/2462.Total_Cost_to_Hire_K_Workers/Solution.h" afterDir="false" />
+    <list default="true" id="f1052fe4-6611-4eb7-ac50-f1207ace5816" name="Changes" comment="practice 26-6-2023">
+      <change afterPath="$PROJECT_DIR$/queue/373. Find K Pairs with Smallest Sums /Solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queue/373. Find K Pairs with Smallest Sums /Solution.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +158,8 @@
       <workItem from="1687433222854" duration="127000" />
       <workItem from="1687433372345" duration="26890000" />
       <workItem from="1687600048974" duration="1025000" />
-      <workItem from="1687793107297" duration="1377000" />
+      <workItem from="1687793107297" duration="1632000" />
+      <workItem from="1687835074011" duration="913000" />
     </task>
     <task id="LOCAL-00001" summary="dynamic-programing at 23/06/2023">
       <option name="closed" value="true" />
@@ -194,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687693341743</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="practice 26-6-2023">
+      <option name="closed" value="true" />
+      <created>1687796954624</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687796954624</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +229,7 @@
     <MESSAGE value="dynamic-programing at 23/06/2023 - 2" />
     <MESSAGE value="an-toan-thong-tin (1)" />
     <MESSAGE value="dynamic-programing 25-6-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="dynamic-programing 25-6-2023" />
+    <MESSAGE value="practice 26-6-2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="practice 26-6-2023" />
   </component>
 </project>
