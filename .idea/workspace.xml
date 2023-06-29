@@ -20,10 +20,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1052fe4-6611-4eb7-ac50-f1207ace5816" name="Changes" comment="practice 27-6-2023">
-      <change afterPath="$PROJECT_DIR$/queue/373. Find K Pairs with Smallest Sums /Solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/queue/373. Find K Pairs with Smallest Sums /Solution.h" afterDir="false" />
+    <list default="true" id="f1052fe4-6611-4eb7-ac50-f1207ace5816" name="Changes" comment="update thuat toan ma hoa">
+      <change afterPath="$PROJECT_DIR$/Thuat toan ma hoa/Utils.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thuat toan ma hoa/Utils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thuat toan ma hoa/hill/hill.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thuat toan ma hoa/hill/hill.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thuat toan ma hoa/affine/affine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Thuat toan ma hoa/affine/affine.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +81,12 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.solution.cpp">
+  <component name="RunManager" selected="C/C++ File.hill.cpp">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Project" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory">
       <method v="2" />
     </configuration>
@@ -87,13 +95,19 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayFair.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="PlayFair.cpp" CONFIG_NAME="PlayFair.cpp">
-      <option name="sourceFile" value="an-toan-thong-tin/PlayFair.cpp" />
+    <configuration name="PlayFair.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="PlayFair.cpp" CONFIG_NAME="PlayFair.cpp">
+      <option name="sourceFile" value="Thuat toan ma hoa/PlayFair.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="Vacation.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$/dp" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="index.cpp" CONFIG_NAME="Vacation.cpp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="affine.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="affine.cpp" CONFIG_NAME="affine.cpp">
+      <option name="sourceFile" value="Thuat toan ma hoa/affine/affine.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -104,8 +118,8 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="shift_cipher.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="shift_cipher.cpp" CONFIG_NAME="shift_cipher.cpp">
-      <option name="sourceFile" value="an-toan-thong-tin/ma-dich-vong/shift_cipher.cpp" />
+    <configuration name="hill.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="hill.cpp" CONFIG_NAME="hill.cpp">
+      <option name="sourceFile" value="Thuat toan ma hoa/hill/hill.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -116,29 +130,23 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="substitution_cipher.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="algo" TARGET_NAME="substitution_cipher.cpp" CONFIG_NAME="substitution_cipher.cpp">
-      <option name="sourceFile" value="an-toan-thong-tin/ma-thay-the/substitution_cipher.cpp" />
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="C/C++ File.Vacation.cpp" />
+      <item itemvalue="C/C++ File.PlayFair.cpp (1)" />
+      <item itemvalue="C/C++ File.affine.cpp (1)" />
+      <item itemvalue="C/C++ File.hill.cpp" />
       <item itemvalue="C/C++ File.solution.cpp" />
-      <item itemvalue="C/C++ File.PlayFair.cpp" />
       <item itemvalue="C/C++ File.affine.cpp" />
-      <item itemvalue="C/C++ File.shift_cipher.cpp" />
-      <item itemvalue="C/C++ File.substitution_cipher.cpp" />
       <item itemvalue="CMake Application.index" />
       <item itemvalue="CMake Debug.Project" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.hill.cpp" />
+        <item itemvalue="C/C++ File.affine.cpp (1)" />
+        <item itemvalue="C/C++ File.PlayFair.cpp (1)" />
         <item itemvalue="C/C++ File.solution.cpp" />
         <item itemvalue="C/C++ File.affine.cpp" />
-        <item itemvalue="C/C++ File.substitution_cipher.cpp" />
-        <item itemvalue="C/C++ File.shift_cipher.cpp" />
-        <item itemvalue="C/C++ File.PlayFair.cpp" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +167,8 @@
       <workItem from="1687433372345" duration="26890000" />
       <workItem from="1687600048974" duration="1025000" />
       <workItem from="1687793107297" duration="1632000" />
-      <workItem from="1687835074011" duration="1233000" />
+      <workItem from="1687835074011" duration="1944000" />
+      <workItem from="1688039970235" duration="11369000" />
     </task>
     <task id="LOCAL-00001" summary="dynamic-programing at 23/06/2023">
       <option name="closed" value="true" />
@@ -209,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687836730028</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update thuat toan ma hoa">
+      <option name="closed" value="true" />
+      <created>1687836835539</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687836835539</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +256,7 @@
     <MESSAGE value="dynamic-programing 25-6-2023" />
     <MESSAGE value="practice 26-6-2023" />
     <MESSAGE value="practice 27-6-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="practice 27-6-2023" />
+    <MESSAGE value="update thuat toan ma hoa" />
+    <option name="LAST_COMMIT_MESSAGE" value="update thuat toan ma hoa" />
   </component>
 </project>
