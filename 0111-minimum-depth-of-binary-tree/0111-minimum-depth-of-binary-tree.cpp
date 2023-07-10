@@ -12,24 +12,29 @@
 class Solution {
 public:
     int minDepth(TreeNode* root) {
-        return dfs(root);
-    }
-    int dfs(TreeNode *root) {
-        if(!root) {
+        if (!root) 
             return 0;
-        }
-        if(!root->right and !root->left) {
-            return 1;
-        }
-        int ans = INT_MAX;
-        if(root->right) {
-            ans = min(ans, dfs(root->right));
-        }
-        if(root->left) {
-            ans = min(ans, dfs(root->left));
-            cout << ans << "  ";
-        }
 
-        return ans + 1;
+        int depth = 0;
+        queue<TreeNode*> q;
+        q.push(root);
+        while (!q.empty()) {
+            int size = q.size();
+            depth++;
+            while(size--) {
+                TreeNode *cur = q.front();
+                cout << cur->val << "  ";
+                q.pop();
+                if (cur->left)
+                    q.push(cur->left);
+                if (cur->right)
+                    q.push(cur->right);
+                if (cur->left == NULL && cur->right == NULL) {
+                    return depth;
+                }
+            } 
+            cout << '\n';
+        }
+        return depth;
     }
 };
