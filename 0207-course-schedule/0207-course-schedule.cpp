@@ -9,29 +9,30 @@ public:
         for (auto const pairCourses : p) {
             adj[pairCourses[0]].push_back(pairCourses[1]);
         }
-
-        for (int i = 0; i < n; ++i) {
-            if (!visited[i]) {
-                if (dfs(i, adj)) return false; // detected cycle
+        
+        for(int i = 0; i < n; ++i) {
+            if(!visited[i]) {
+                if(dfs(i,adj)) return false; // detected is cycle
             }
         }
         return true;
     }
-
-    bool dfs(int i, const vector<vector<int>>& adj) {
+    int dfs(int i,vector<vector<int>> &adj) {
+        
         visited[i] = true;
         detect[i] = true;
 
         for (int neighbor : adj[i]) {
-            if (!visited[neighbor]) {
-                if (dfs(neighbor, adj)) return true;
+            if(!visited[neighbor]) {
+                if(dfs(neighbor, adj)) return true;
             }
-            else if (detect[neighbor]) {
-                return true; // detected cycle
+            else if(detect[neighbor]) {
+                return true;
             }
+            
         }
 
-        detect[i] = false; // Reset detect status after visiting all neighbors
-        return false;
+        // Reset detect status after visiting all neighbors
+        return  detect[i] = false;;
     }
 };
