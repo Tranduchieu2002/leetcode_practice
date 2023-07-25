@@ -2,8 +2,6 @@ class Solution {
 public:
     int peakIndexInMountainArray(vector<int>& arr) {
         int n = arr.size();
-        
-        
         int left = 0;
         int right = n - 1;
         
