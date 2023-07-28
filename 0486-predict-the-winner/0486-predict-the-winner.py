@@ -1,6 +1,6 @@
 class Solution:
     def __init__(self):
-        self.dp = [[-1] * 23 for _ in range(23)]
+        self.dp = [[]]
     
     def solve(self,i: int, j: int, nums: List[int]) -> int:
         if(i > j):
@@ -14,7 +14,7 @@ class Solution:
         return self.dp[i][j]
     def PredictTheWinner(self, nums: List[int]) -> bool:
         n = len(nums)
-        dp = [[-1 for _ in range(n)] for _ in range(n)]
+        self.dp = [[-1 for _ in range(n)] for _ in range(n)]
         
         return self.solve(0, n - 1, nums) >= 0
         
