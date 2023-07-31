@@ -8,7 +8,7 @@ class Solution:
             return nums[0];
         
         buckets = [0] * 100001
-        dp = [0] * 10001
+        # dp = [0] * 10001
         for val in nums:
             buckets[val] += val
         # if nums is [2, 2, 3, 3, 3, 4] then buckets would be [0, 0, 4, 9, 4]
