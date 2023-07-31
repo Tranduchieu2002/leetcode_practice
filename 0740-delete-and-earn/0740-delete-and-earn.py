@@ -1,13 +1,14 @@
 class Solution:
     def deleteAndEarn(self, nums: List[int]) -> int:
         n = len(nums)
+        maxEle = max(nums)
         if (n == 0):
             return 0;
         
         if (n == 1):
             return nums[0];
         
-        buckets = [0] * 100001
+        buckets = [0] * (maxEle + 1)
         # dp = [0] * 10001
         for val in nums:
             buckets[val] += val
@@ -27,10 +28,10 @@ class Solution:
         #   temp = max(9,4) = 9, prev = 4, curr = 9
         #   temp = max(4 + 4, 9) = 9, prev = 9, curr = 9
         prev = curr = 0
-        for val in buckets:
+        for i in range(maxEle + 1):
             # dp[i] = max(dp[i - 1], dp[i - 2] + buckets[i])            
             # way 2
-            temp =  max(prev + val, curr)
+            temp =  max(prev + buckets[i], curr)
             prev = curr
             curr = temp
         return curr
