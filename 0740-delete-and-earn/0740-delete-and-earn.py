@@ -16,10 +16,22 @@ class Solution:
         # dp[3] => { 1;2 } = {0, 9}
         # dp[4] => { 2;3 } = {4 + 4, 9} => ans = 9
     
-        dp[0] = buckets[0]
-        dp[1] = max(buckets[0], buckets[1]);
-        for i in range(2,10001):
-            dp[i] = max(dp[i - 1], dp[i - 2] + buckets[i])
-        print(set(buckets))
-        return dp[10000]
+        # prev code
+        # dp[0] = buckets[0]
+        # dp[1] = max(buckets[0], buckets[1]);
+        
+        # another way using two vars to save first element dp, and second dp and then compare it
+        #   [0, 0, 4, 9, 4]
+        #   prev = curr = 0
+        #   temp = 4 prev = 0, curr = 4
+        #   temp = max(9,4) = 9, prev = 4, curr = 9
+        #   temp = max(4 + 4, 9) = 9, prev = 9, curr = 9
+        prev = curr = 0
+        for val in buckets:
+            # dp[i] = max(dp[i - 1], dp[i - 2] + buckets[i])            
+            # way 2
+            temp =  max(prev + val, curr)
+            prev = curr
+            curr = temp
+        return curr
         
