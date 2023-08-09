@@ -8,7 +8,7 @@ class Solution:
         self.speed = speed
         min_dist_target = speed * hoursBefore
         
-        dp = [[-1] * n for _ in range(n)]
+        dp = [[inf] * n for _ in range(n)]
         
         dp[0][0] = dist[0]
 
