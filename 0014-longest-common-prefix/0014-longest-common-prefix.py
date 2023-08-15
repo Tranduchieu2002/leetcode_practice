@@ -32,7 +32,6 @@ class Trie:
         node = self.root
         for c in word:
             index = ord(c) - ord('a')
-            print(node.sizes, c)
             if( not node.children[index] 
             or node.is_end_of_word
             or node.sizes > 1 ):
