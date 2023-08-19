@@ -34,8 +34,8 @@ class Solution:
 #               trunfg dinh
             for i in range(n):
                 if uf.find(i) != uf.find(0):
-                    return float('inf')
-            print(uf.parent, e , block)
+                    return 3000
+            # print(uf.parent, e , block)
             return weight
         
         for (i, edge) in enumerate(edges):
