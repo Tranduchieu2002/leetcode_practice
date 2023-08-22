@@ -11,7 +11,7 @@ class Solution:
             p_u = self.find(u)
             p_v = self.find(v)
             if (p_u != p_v):
-                self.parent[p_u] = p_v
+                self.parent[p_v] = p_u
         
     def findCriticalAndPseudoCriticalEdges(self, n: int, edges: List[List[int]]) -> List[List[int]]:
         m = len(edges)
