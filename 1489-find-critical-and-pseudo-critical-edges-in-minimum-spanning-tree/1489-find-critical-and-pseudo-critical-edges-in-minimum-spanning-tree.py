@@ -1,60 +1,51 @@
-class Union_Find:
-    def __init__(self, n):
-        self.parent = list(range(n))
-        
-    def find(self, x):
-        if x != self.parent[x]:
-            self.parent[x] =  self.find(self.parent[x])
-        return self.parent[x]
-    def union(self, x, y):
-        root_x = self.find(x)
-        root_y = self.find(y)
-        self.parent[root_x] = self.parent[root_y]
-        
 class Solution:
-    def findCriticalAndPseudoCriticalEdges(self, n: int, edges: List[List[int]]) -> List[List[int]]:        
+    class Union_Find():
+        def __init__(self, n):
+            self.parent = list(range(n))
+        def find(self, u):
+            parent = self.parent
+            if parent[u] != u:
+                parent[u] = self.find(parent[u])
+            return parent[u]
+        def union(self, u, v):
+            p_u = self.find(u)
+            p_v = self.find(v)
+            if (p_u != p_v):
+                self.parent[p_u] = p_v
+        
+    def findCriticalAndPseudoCriticalEdges(self, n: int, edges: List[List[int]]) -> List[List[int]]:
+        m = len(edges)
         critical = []
         pseudo_critical = []
-        copied_edges = [edge.copy() for edge in edges]
+        for i in range(m):
+            edges[i].append(i)
         
-        def mst(edges, block, e):
+        edges.sort(key = lambda x:x[2])
+        
+        def mst(take = -1, rm = -1):
+            
+            uf = self.Union_Find(n)
             weight = 0
-            uf = Union_Find(n)
-            if e != -1:
-                uf.union(edges[e][0], edges[e][1]) 
-                weight += edges[e][2]
-            for i, edge in enumerate(copied_edges):
-                if i == block:
-                    continue
-                if uf.find(edge[0]) == uf.find(edge[1]):
-                    continue
-                uf.union(edge[0], edge[1])
-                # print(uf.parent, edge[0], edge[1])                
-                weight += edge[2]
-#               trunfg dinh
-            for i in range(n):
+            if take != -1:
+                uf.union(edges[take][0],edges[take][1])
+                weight += edges[take][2]
+            for (i , edge) in enumerate(edges):
+                (u, v, w, j) = edge
+                if uf.find(u) != uf.find(v):
+                    if rm == i:
+                        continue
+                    uf.union(u, v)
+                    weight += w
+            for i in range(n): # check is disconnected
                 if uf.find(i) != uf.find(0):
-                    return 3000
-            # print(uf.parent, e , block)
+                    return 100000
             return weight
-        
+        min_cost = mst()
         for (i, edge) in enumerate(edges):
-            
-            copied_edge = edge
-            copied_edge.append(i)
-            copied_edges[i] = copied_edge
-        # edges.sort(key=lambda x: x[2])
-        copied_edges.sort(key=lambda x: x[2])    
-        m_w = mst(copied_edges,- 1, -1)
-        for i, edge in enumerate(copied_edges):
-#              if we ignore critical edge we got mst greater than min 
-            if  m_w < mst(copied_edges, i, -1):
+            if mst(-1, i) > min_cost:
                 critical.append(edge[3])
-            elif m_w == mst(copied_edges, -1, i):
+            elif mst(i, -1) == min_cost:
                 pseudo_critical.append(edge[3])
-                
         return [critical, pseudo_critical]
-    
             
-        
         
