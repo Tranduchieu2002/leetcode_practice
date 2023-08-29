@@ -2,7 +2,7 @@ class Solution:
     def bestClosingTime(self, customers: str) -> int:
         n = len(customers)
         ans = 0
-        cur_p = p = customers.count('Y')
+        cur_p = p = 0
         for i in range(n):
             c = customers[i]
             cur_p += 1 if c == 'N' else -1
