@@ -1,16 +1,23 @@
 class Solution:
     def firstUniqChar(self, s: str) -> int:
-        char_set = [0] * 26
-        dq = deque()
+        # char_set = [0] * 26
+        # dq = deque()
+        # for i, c in enumerate(s):
+        #     num_char = ord(c) - ord('a')
+        #     char_set[num_char] += 1
+        #     dq.append(i)
+        #     while dq:
+        #         if char_set[ord(s[dq[0]]) - ord('a')] > 1:
+        #             dq.popleft()
+        #         else:
+        #             break
+        # return  dq[0] if dq else -1
+        
+        # chars = 'abcdefghijklmnopqrstuvwxyz'
         for i, c in enumerate(s):
-            num_char = ord(c) - ord('a')
-            char_set[num_char] += 1
-            dq.append(i)
-            while dq:
-                if char_set[ord(s[dq[0]]) - ord('a')] > 1:
-                    dq.popleft()
-                else:
-                    break
-        return  dq[0] if dq else -1
-            
+            first_find_i = s.find(c)
+            right_find_i = s.rfind(c)
+            if first_find_i == right_find_i:
+                return i
+        return  -1
             
