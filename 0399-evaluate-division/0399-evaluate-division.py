@@ -1,44 +1,39 @@
 class Solution:
     def calcEquation(self, equations: List[List[str]], values: List[float], queries: List[List[str]]) -> List[float]:
         n, q = len(equations), len(queries)
-        ans = []
-        mp = {}
-        
-        
+        results = []
+#         Sử dụng tính chất hoán vị của phép nhân  + bfs để tim ra được hàng biến trùng nhau
+        equations_dict = {}
         for i in range(n):
             (e1, e2) = equations[i]
-            if e1 not in mp:
-                mp[e1] = []
-            if e2 not in mp:
-                mp[e2] = []
-            mp[e1].append((e2, values[i]))
-            mp[e1].append((e1, 1.0))
-            
-            mp[e2].append((e1, 1 / values[i]))
-            mp[e2].append((e2, 1.0))
+            if e1 not in equations_dict:
+                equations_dict[e1] = []
+            if e2 not in equations_dict:
+                equations_dict[e2] = []
+            equations_dict[e1].append((e2, values[i]))
+            equations_dict[e2].append((e1, 1 / values[i]))
         
-        for q in queries:
-            x1 , x2  = q
-            if x1 not in mp or x2 not in mp:
-                ans.append(-1)
+        # Evaluate queries
+        for query in queries:
+            x1, x2 = query
+            if x1 not in equations_dict or x2 not in equations_dict:
+                results.append(-1.0)
                 continue
-            st = [(x1, 1.0)]
+            stack = [(x1, 1.0)]
             visited = set()
-            val = float('inf')
-            while st:
-                (u, curVal) = st.pop()
+            result = float('inf')
+            while stack:
+                (u, current_value) = stack.pop()
                 visited.add(u)
-                
                 if u == x2:
-                    val = curVal
+                    result = current_value
                     break
-                for (v, w) in mp.get(u, []):
+                for (v, w) in equations_dict.get(u, []):
                     if v not in visited:
-                        st.append((v, curVal * w))
-#                      x1 = 2 * b => b = {a , c}
-            if val != float('inf'):
-                ans.append(val)
+                        stack.append((v, current_value * w))
+            if result != float('inf'):
+                results.append(result)
             else:
-                ans.append(-1)
-            
-        return ans
+                results.append(-1.0)
+        
+        return results
