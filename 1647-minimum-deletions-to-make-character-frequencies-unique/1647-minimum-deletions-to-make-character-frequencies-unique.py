@@ -1,9 +1,11 @@
 class Solution:
     def minDeletions(self, s: str) -> int:
-        counter = Counter(s)
+        counter = [0] * 26
         deletions = 0
+        for c in s:
+            counter[ord(c) - ord('a')] += 1
         freqs_set = set()
-        for char, freq in counter.items():
+        for freq in counter:
             while freq > 0 and freq in freqs_set:
                 freq -= 1
                 deletions += 1
