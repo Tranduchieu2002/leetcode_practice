@@ -27,5 +27,4 @@ class Solution:
                 q.append(leftChild[cur])
             if rightChild[cur] != -1:
                 q.append(rightChild[cur])
-        print(visited)
         return sum(visited) == n
