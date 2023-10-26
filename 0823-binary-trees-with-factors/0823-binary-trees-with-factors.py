@@ -8,8 +8,10 @@ class Solution:
         
         for i in arr:
             for j in arr:
+                # fix it is factor
                 if j > i**0.5:
-                    break
+                    break 
+                # if j is child node of i and this child containing in arrr
                 if i % j == 0 and i // j in s:
                     if i // j == j:
                         dp[i] += dp[j] * dp[j]
