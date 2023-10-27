@@ -1,14 +1,12 @@
 class Solution:
     def longestPalindrome(self, s):
-        longest_palindrom = ''
+        longest_palindrom = s[0]
         dp = [[0]*len(s) for _ in range(len(s))]
-        #filling out the diagonal by 1
-        for i in range(len(s)):
-            dp[i][i] = True
-            longest_palindrom = s[i]
+     
 			
         # filling the dp table
         for i in range(len(s)-1,-1,-1):
+            dp[i][i] = True
 				# j starts from the i location : to only work on the upper side of the diagonal 
             for j in range(i+1,len(s)):  
                 if s[i] == s[j]:  #if the chars mathces
