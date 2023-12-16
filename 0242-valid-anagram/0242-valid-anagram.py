@@ -11,7 +11,6 @@ class Solution:
             freq[charToInt(s[i])] += 1
             freq[charToInt(t[i])] -= 1
         k = 0
-        print(freq)
         while k < len(freq) and freq[k] == 0:
             k += 1
         return k == 26
