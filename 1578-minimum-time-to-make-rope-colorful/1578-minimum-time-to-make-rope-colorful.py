@@ -1,14 +1,20 @@
 class Solution:
     def minCost(self, colors: str, neededTime: List[int]) -> int:
-        ans = 0
+        res = 0
         n = len(colors)
-        for i in range(1, n):
-            if colors[i - 1] == colors[i]:
-                ans += min(neededTime[i], neededTime[i - 1])
-                # update max in prev time 
-                neededTime[i] = max(neededTime[i - 1], neededTime[i])
-        
-        return ans
+        dp = [[-1] * 27 for _ in range(n + 1)]
+        def solve(i, prev):
+            if i >= n:
+                return 0
+            if dp[i][ord(prev) - ord('a')] != -1:
+                return dp[i][ord(prev) - ord('a')]
+            ans = 0
             
+            if(colors[i] == prev):
+                ans = solve(i + 1, prev) + neededTime[i]
+            else: 
+                ans = min(solve(i + 1, colors[i]), solve(i + 1, prev) + neededTime[i])
+            dp[i][ord(prev) - ord('a')] = ans
+            return ans
             
-            
+        return solve(0, '{')
