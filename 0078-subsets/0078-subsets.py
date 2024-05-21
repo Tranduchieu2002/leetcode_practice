@@ -1,15 +1,14 @@
 class Solution:
+    
     def subsets(self, nums: List[int]) -> List[List[int]]:
         n = len(nums)
         ans = []
-        def backtrack(i, res):
-            ans.append(res[:]) 
-            
-            for j in range(i, n):
-                res.append(nums[j])
-                backtrack(j + 1, res)
-                res.pop()
-            return
-        
-        backtrack(0, [])
+        def checkbit(parent, sub):
+            return (parent >> sub) & 1 == 1
+        for i in range(1 << n):
+            temp = []
+            for j in range(n):
+                if checkbit(i, j):
+                    temp.append(nums[j])
+            ans.append(temp)
         return ans
