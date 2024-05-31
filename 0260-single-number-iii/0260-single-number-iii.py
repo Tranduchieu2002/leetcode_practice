@@ -9,7 +9,6 @@ class Solution:
         while temp >> flag & 1 == 0:
             flag += 1
         for num in nums:
-            print(num >> flag & 1, num)
             if (num >> flag & 1) == 1:
                 ans[0] ^= num
             else:
